@@ -3,11 +3,11 @@
 namespace reign {
 
       template <typename t>
-      class allocate {
+      class allocator {
 
           public:
 
-            explicit allocate(const std::uint32_t initial_size = 0u) {
+            explicit allocator(const std::uint32_t initial_size = 0u) {
                   this->allocs.reserve(initial_size);
                   return;
             }
